@@ -16,11 +16,11 @@
     <header class="header">
         <a href="#" class="logo">Softpro</a>
         <div class="nav-bar">
-            <nav class="nav-bar1">
-                <a href="#"><i class='bx bx-menu' ></i></a>
+            <nav onclick="toggleMenu()" class="nav-bar1">
+                <a><i class='bx bx-menu' ></i></a>
             </nav>
             <nav class="navbar">
-                <a href="#home" style="--i:1" class="active">Home</a>
+                <a href="#home" style="--i:1">Home</a>
                 <a href="#about" style="--i:2">About</a>
                 <a href="#service" style="--i:3">Service</a>
                 <a href="#skill" style="--i:4">Skill</a>
@@ -31,8 +31,21 @@
             </nav>
         </div>
     </header>
+    <div id="mini-navbar" class="mini-navbar">
+        <a onclick="hideMenu()" href="#home" style="--i:1" >Home</a>
+        <a onclick="hideMenu()" href="#about" style="--i:2">About</a>
+        <a onclick="hideMenu()" href="#service" style="--i:3">Service</a>
+        <a onclick="hideMenu()" href="#skill" style="--i:4">Skill</a>
+        <a onclick="hideMenu()" href="#project" style="--i:5">Project</a>
+        <a onclick="hideMenu()" href="#experience" style="--i:6">Experience</a>
+        <a onclick="hideMenu()" href="#hire" style="--i:7">HireMe</a>
+        <a onclick="hideMenu()" href="#contact" style="--i:8">Contact</a>
+    </div>
     <section id="home">
         <div class="home">
+            <div class="back-shape">
+                <div class="back-shape1"></div>
+            </div>
             <div class="home-content">
                 <h3>👋 Hey there! I'm</h3>
                 <h1>Sivakkanth Karunakaran</h1>
@@ -257,7 +270,7 @@
                 <div class="Project-content">
                     <div class="row">
                         <h5>Crypto Currency Management System</h5>
-                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/XcpPwtxCeTA?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="50%" src="1https://www.youtube.com/embed/XcpPwtxCeTA?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <img id="proimage" src="..\Image\crypto.png" alt="crypto currency management system"/>
                         <div class="layer">
                             <p>It serves as a centralized platform for users to manage 
@@ -270,7 +283,7 @@
                     </div>
                     <div class="row">
                         <h5>Sample DashBoard (dappr) </h5>
-                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/ufGk9rdNpfI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="50%" src="1https://www.youtube.com/embed/ufGk9rdNpfI?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <img src="..\Image\DashBoard.jpeg" alt="Sample DashBoard"/>
                         <div class="layer">
                             <p>The Sample Dashboard is a dynamic and fully responsive web application
@@ -283,7 +296,7 @@
                     </div>
                     <div class="row">
                         <h5>Job Portal Mobile App (JobGods)</h5>
-                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/sZNc7P7yzeo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="50%" src="1https://www.youtube.com/embed/sZNc7P7yzeo?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <img src="..\Image\JobGods.png" alt="Mobile App"/>
                         <div class="layer">
                             <p>JobGods is an innovative mobile application designed to bridge the gap between 
@@ -295,7 +308,7 @@
                     </div>
                     <div class="row">
                         <h5>Portfolio (Softpro) </h5>
-                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/aOy34Uft1pY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="50%" src="1https://www.youtube.com/embed/aOy34Uft1pY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <img src="..\Image\portfolio.png" alt="Portfolio"/>
                         <div class="layer">
                             <p>This portfolio website showcases my expertise 
@@ -307,7 +320,7 @@
                     </div>
                     <div class="row">
                         <h5>Student Management System</h5>
-                        <iframe width="100%" height="50%" src="https://www.youtube.com/embed/aOy34Uft1pY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="100%" height="50%" src="1https://www.youtube.com/embed/aOy34Uft1pY?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                         <img src="..\Image\Home.png" alt="Student Management System"/>
                         <div class="layer">
                             <p>The Student Management System is a desktop application developed
@@ -471,6 +484,9 @@
             </div>
         </div>
     </section>
+    <a href="#" class="to-top">
+        <i class='bx bxs-chevron-up'></i>
+    </a>
     <script src="main.js"></script>
     <script src="https://web3forms.com/client/script.js" async defer></script>
     <script>

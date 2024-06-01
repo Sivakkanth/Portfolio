@@ -114,7 +114,7 @@
     font-size: 15px;
   }
   .radial-bar .text{
-    left: 80%;
+    left: 30%;
     top: 15px;
     font-size: 15px;
   }
@@ -282,7 +282,7 @@
     font-size: 18px;
   }
   .h-captcha{
-    transform: scale(1);
+    transform: scaleX(1.15);
   }
 }
 
@@ -340,6 +340,40 @@
     padding: 5px 0px;
     width: 250px;
     margin: 10px;
+  }
+  #mini-navbar{
+    position: fixed;
+    padding-top: 50px;
+    width: 100%;
+    height: 100%;
+    background-color: #030934;
+    z-index: 5;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+  #mini-navbar a{
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+  }
+  #mini-navbar a:hover{
+    color: #0ef;
+    background-color: transparent;
+  }
+  #mini-navbar a.active{
+    color: #030934;
+    background-color: #0ef;
+  }
+  .mini-navbar.show{
+    display: flex;
+  }
+  .mini-navbar.hide{
+    display: none;
   }
 }
 
@@ -438,7 +472,7 @@
     position: relative;
     width: 100vw;
     justify-content: space-between;
-    height: 100vh;
+    height: auto;
     display: flex;
     align-items: flex-start;
   }
@@ -536,8 +570,10 @@
   .summary p{
     font-size: 15px;
   }
-  .h-captcha {
-    transform: scale(0.8);
+  .radial-bar .text{
+    left: 35%;
+    top: 10px;
+    font-size: 15px;
   }
 }
 
@@ -546,7 +582,7 @@
     margin-top: -120px;
   }
   .home-content{
-    margin-top: 120px;
+    margin-top: 190px;
   }
   .home-content h3 {
     font-size: 16px;
@@ -554,20 +590,36 @@
   .home-content h1{
     font-size:21px;
     font-weight: 700;
+    padding-block: 20px;
   }
   .home-content p {
     font-size: 12px;
   }
+  .back-shape{
+    position: absolute;
+    width: 100%;
+    height: 45%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .back-shape1{
+    width: 100%;
+    height: 100%;
+    background-color: #030934;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 100px;
+  }
   .home-sci a{
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
     margin: 20px 10px 20px 0px;
   }
   .home-sci div{
-    width: 20px;
-    height: 20px;
-    font-size: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
     margin: 20px 10px 20px 0px;
   }
   .home-content h3:nth-of-type(2){
@@ -727,14 +779,13 @@
     font-size: 15px;
   }
   .h-captcha{
-    transform: scale(0.5);
-
+    transform: scaleX(0.65);
   }
 }
 
 @media screen and (max-width:315px) {
   .home-content{
-    margin-top: 90px;
+    margin-top: 150px;
   }
   .profileImage {
     margin-top: -150px;
@@ -785,6 +836,10 @@ body{
   background: #060d45;
 }
 
+section{
+  min-height: 100vh;
+}
+
 .logo{
   position: relative;
   font-size: 25px;
@@ -796,6 +851,11 @@ body{
   opacity: 0;
   animation: slideRight 1s ease forwards;
   text-decoration: overline;
+}
+
+.logo:hover{
+  background-color: transparent;
+  color: white;
 }
 
 .nav-bar{
@@ -834,7 +894,7 @@ body{
   animation: slideTop .5s ease forwards;
 }
 
-.navbar a:hover{
+.navbar a.active, a:hover{
   color: #030934;
   background-color: #0ef;
 }
@@ -843,6 +903,7 @@ body{
   color: #030934;
   background-color: #0ef;
   border: 0px solid white;
+  cursor: pointer;
 }
 
 .nav-bar1 a:hover i{
@@ -982,7 +1043,6 @@ body{
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin-top: 50px;
   padding: 50px 10% 0;
 }
 
@@ -1120,7 +1180,6 @@ body{
   color: aliceblue;
   font-size: 20px;
   line-height: 1.4;
-  margin: 4rem 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1305,8 +1364,8 @@ body{
 }
 
 .radial-bars .radial-bar{
-  width: 35%;
-  margin-bottom: 10px;
+  width: 34%;
+  padding-bottom: 10px;
   position: relative;
 }
 
@@ -1655,7 +1714,7 @@ body{
   height: 100%;
   margin-top: 50px;
   padding: 50px 10% 0;
-  background-color: #01334381;
+  background-color: #060d4559;
 }
 
 .hire h2 span{
@@ -1791,6 +1850,10 @@ body{
   width: 100%;
 }
 
+#check{
+  display: none;
+}
+
 @keyframes slideRight{
   0% {
       transform: translateX(-100px);
@@ -1833,4 +1896,33 @@ body{
       transform: translateY(0px);
       opacity: 1;
   }
+}
+
+.to-top{
+  background: white;
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #030934;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all .4s;
+}
+
+.to-top.active{
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+html{
+  scroll-behavior: smooth;
 }
