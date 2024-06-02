@@ -915,10 +915,6 @@ body{
   background: #060d45;
 }
 
-section{
-  min-height: 100vh;
-}
-
 .logo{
   position: relative;
   font-size: 25px;
