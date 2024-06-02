@@ -21,6 +21,11 @@
     display: flex;
     align-items: center;
   }
+  #home{
+    margin-top: 30px;
+    padding-top: 50px;
+    margin-bottom: -50px;
+  }
   .home-content h3 {
     font-size: 30px;
   }
@@ -367,7 +372,6 @@
   }
   #mini-navbar{
     position: fixed;
-    padding-top: 50px;
     width: 100%;
     height: 100%;
     background-color: #030934;
@@ -627,10 +631,6 @@
   .profileImage {
     margin-top: -120px;
   }
-  #home{
-    margin-top: 50px;
-    padding-block: 50px;
-  }
   .home{
     padding: 0px 10% 50px 10%;
   }
@@ -853,6 +853,9 @@
   .youtube{
     width: 100%;
     height: 250px;
+  }
+  #home{
+    margin-top: 50px;
   }
 }
 
@@ -1814,6 +1817,13 @@ section{
   text-decoration: none;
   color: #0ef;
 }
+
+.hire h5 a:hover{
+  text-decoration: none;
+  color: #0ef;
+  background-color: transparent;
+}
+
 
 #hire img{
   background-size: cover;
