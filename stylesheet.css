@@ -376,6 +376,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .mini-navbar{
+    display: none;
+  }
   #mini-navbar a{
     width: 100%;
     text-align: center;
@@ -623,6 +626,13 @@
 @media screen and (max-width:426px) {
   .profileImage {
     margin-top: -120px;
+  }
+  #home{
+    margin-top: 50px;
+    padding-block: 50px;
+  }
+  .home{
+    padding: 0px 10% 50px 10%;
   }
   .home-content{
     margin-top: 190px;
@@ -2051,4 +2061,3 @@ html{
   padding-block: 30px;
   width: 100%;
 }
-
