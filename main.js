@@ -36,3 +36,7 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active")
     }
 })
+
+function preview(){
+    alert("Processing for deployed")
+}

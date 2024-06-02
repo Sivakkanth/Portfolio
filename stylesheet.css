@@ -148,6 +148,9 @@
   .layer p{
     font-size: 15px;
   }
+  .layer a:hover{
+    background-color: transparent;
+  }
   .experience h2{
     font-size: 50px;
     margin-top: 30px;
@@ -284,6 +287,27 @@
   .h-captcha{
     transform: scaleX(1.15);
   }
+  .Pro-title h1{
+    font-size: 50px;
+    text-align: center;
+  }
+  .preview{
+    padding: 10px 25px;
+    border-radius: 10px;
+    top: 200px;
+    right: 100px;
+  }
+  .Pro-title i{
+    font-size: 50px;
+    width: 50px;
+    height: 50px;
+    top: 30px;
+    left: 20px;
+  }
+  .youtube{
+    width: 90%;
+    height: 500px;
+  }
 }
 
 @media screen and (max-width:1350px) {
@@ -375,6 +399,9 @@
   .mini-navbar.hide{
     display: none;
   }
+  .Pro-title h1{
+    font-size: 45px;
+  }
 }
 
 @media screen and (max-width:1024px) {
@@ -464,6 +491,19 @@
   }
   .contact-info-method p{
     font-size: 12px;
+  }
+  .Pro-title h1{
+    font-size: 40px;
+  }
+  .preview{
+    padding: 10px 25px;
+    border-radius: 10px;
+    top: 150px;
+    right: 50px;
+  }
+  .youtube{
+    width: 100%;
+    height: 400px;
   }
 }
 
@@ -574,6 +614,9 @@
     left: 35%;
     top: 10px;
     font-size: 15px;
+  }
+  .Pro-title h1{
+    font-size: 35px;
   }
 }
 
@@ -781,6 +824,26 @@
   .h-captcha{
     transform: scaleX(0.65);
   }
+  .Pro-title h1{
+    font-size: 25px;
+  }
+  .Pro-title i{
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    top: 20px;
+    left: 20px;
+  }
+  .preview{
+    padding: 10px 25px;
+    border-radius: 10px;
+    top: 150px;
+    right: 20px;
+  }
+  .youtube{
+    width: 100%;
+    height: 250px;
+  }
 }
 
 @media screen and (max-width:315px) {
@@ -807,6 +870,9 @@
   }
   .contact h2{
     font-size: 25px;
+  }
+  .Pro-title h1{
+    font-size: 20px;
   }
 }
 
@@ -1926,3 +1992,63 @@ section{
 html{
   scroll-behavior: smooth;
 }
+
+.Pro-title{
+  width: 100%;
+  background-color: #060d45;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+  padding: 30px;
+}
+
+.Pro-title i{
+  position: fixed;
+  cursor: pointer;
+  color: white;
+}
+
+#pre i:hover{
+  color: #0ef;
+}
+
+.preview{
+  position: fixed;
+  z-index: 200;
+  background-color: #060d45;
+  color: white;
+  cursor: pointer;
+}
+
+.preview:hover{
+  background-color: #09146a;
+}
+
+.Pro-main{
+  padding-top: 150px;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-inline: 10%;
+}
+
+.Pro-main h3{
+  color: #030934;
+  padding-top: 50px;
+}
+
+.Pro-main p{
+  color: #000000;
+  text-align: justify;
+  line-height: 1.5;
+  padding-block: 30px;
+  width: 100%;
+}
+
