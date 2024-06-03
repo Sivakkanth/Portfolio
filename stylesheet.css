@@ -664,17 +664,18 @@
   }
   .profileImage{
     width: 300px;
-    padding-bottom: 150px;
+    padding-bottom: 200px;
   }
   .home-content h1{
     font-size: 25px;
+    padding-block: 5px;
   }
   .home-content h3{
     font-size: 18px;
     font-weight: 700;
   }
   .home-content p{
-    font-size: 13px;
+    font-size: 15px;
   }
   .home-content h3:nth-of-type(2){
     margin-bottom: 15px;
