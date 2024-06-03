@@ -5,35 +5,40 @@
   .nav-bar1 a{
     display: none;
   }
-  .profileImage {
-    z-index: 0;
-    width: 700px;
-    height: 700px;
+  .home{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10%;
+    flex-wrap: nowrap;
+    min-height: 650px;
   }
   .home-content{
-    max-width: 45vw;
-  }
-  .home{
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 100vh;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 100px;
+    width: 100%;
+    height: 100%;
   }
-  #home{
-    margin-top: 30px;
-    padding-top: 50px;
-    margin-bottom: -50px;
-  }
-  .home-content h3 {
-    font-size: 30px;
+  .profileImage{
+    height: 100%;
+    width: 800px;
+    z-index: -1;
+    bottom: 0;
   }
   .home-content h1{
     font-size: 50px;
+  }
+  .home-content h3{
+    font-size: 30px;
     font-weight: 700;
   }
-  .home-content p {
+  .home-content p{
     font-size: 20px;
   }
   .home-sci a{
@@ -315,27 +320,21 @@
   }
 }
 
-@media screen and (max-width:1350px) {
+@media screen and (max-width:1400px) {
   .navbar a{
     display: none;
   }
   .nav-bar1 a{
     display: inline-block;
   }
-  .profileImage {
-    position: absolute;
-    z-index: -1;
-    width: 80%;
-    left: 15%;
-    top: 50px;
+  .home-content h1{
+    font-size: 45px;
   }
-  .home{
-    width: 100%;
-    height: 100vh;
+  .home-content h3{
+    font-size: 25px;
   }
-  .home-content{
-    max-width: 75vw;
-    margin-top: 100px;
+  .home-content p{
+    font-size: 18px;
   }
   .about h2{
     font-size: 45px;
@@ -373,12 +372,13 @@
   #mini-navbar{
     position: fixed;
     width: 100%;
-    height: 100%;
+    height: -webkit-fill-available;
     background-color: #030934;
     z-index: 5;
     justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
+    padding-top: 50px;
   }
   .mini-navbar{
     display: none;
@@ -411,7 +411,36 @@
   }
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1100px) {
+  .back-shape{
+    position: absolute;
+    width: 100%;
+    height: 55%;
+    z-index: 0;
+    bottom: 0;
+    right: 0;
+  }
+  .back-shape1{
+    width: 100%;
+    height: 100%;
+    background-color: #0309346f;
+    border-top-left-radius: 500px;
+    border-top-right-radius: 900px;
+  }
+  .home-content{
+    width: 80%;
+    padding-bottom: 75px;
+  }
+  .home-content h1{
+    font-size: 40px;
+  }
+  .profileImage{
+    height: 90%;
+    width: 500px;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+  }
   .about-content {
     flex-direction: column;
   }
@@ -515,30 +544,34 @@
 }
 
 @media screen and (max-width:768px) {
-  .home{
-    position: relative;
-    width: 100vw;
-    justify-content: space-between;
-    height: auto;
-    display: flex;
-    align-items: flex-start;
-  }
   .home-content{
-    max-width: 100%;
-    margin-top: 150px;
+    padding-bottom: 50px;
+    width: 90%;
   }
-  .home-content h3 {
-    font-size: 25px;
+  .profileImage{
+    width: 450px;
+    padding-top: 50px;
   }
   .home-content h1{
-    font-size:40px;
-    font-weight: 700;
+    font-size: 35px;
   }
-  .home-content p {
+  .home-content h3{
+    font-size: 20px;
+  }
+  .home-content p{
     font-size: 18px;
   }
-  .profileImage {
-    margin-top: -20px;
+  .home-sci a{
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    margin: 20px 10px 20px 0px;
+  }
+  .home-sci div{
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    margin: 20px 10px 20px 0px;
   }
   .about-img{
     height: 300px;
@@ -549,12 +582,6 @@
   }
   .about h2{
     font-size: 35px;
-  }
-  .home-sci a{
-    margin: 20px 10px 20px 0px;
-  }
-  .home-sci div{
-    margin: 20px 10px 20px 0px;
   }
   .about-text h4{
     font-size: 20px;
@@ -628,52 +655,26 @@
 }
 
 @media screen and (max-width:426px) {
-  .profileImage {
-    margin-top: -120px;
-  }
   .home{
-    padding: 0px 10% 0px 10%;
+    height: 90vh;
   }
   .home-content{
-    margin-top: 190px;
+    padding-bottom: 50px;
+    width: 100%;
   }
-  .home-content h3 {
-    font-size: 16px;
+  .profileImage{
+    width: 300px;
+    padding-bottom: 150px;
   }
   .home-content h1{
-    font-size:21px;
+    font-size: 25px;
+  }
+  .home-content h3{
+    font-size: 18px;
     font-weight: 700;
-    padding-block: 20px;
   }
-  .home-content p {
-    font-size: 12px;
-  }
-  .back-shape{
-    position: absolute;
-    width: 100%;
-    height: 45%;
-    z-index: 0;
-    bottom: 0;
-    right: 0;
-  }
-  .back-shape1{
-    width: 100%;
-    height: 100%;
-    background-color: #030934;
-    border-top-left-radius: 500px;
-    border-top-right-radius: 100px;
-  }
-  .home-sci a{
-    width: 25px;
-    height: 25px;
-    font-size: 15px;
-    margin: 20px 10px 20px 0px;
-  }
-  .home-sci div{
-    width: 25px;
-    height: 25px;
-    font-size: 15px;
-    margin: 20px 10px 20px 0px;
+  .home-content p{
+    font-size: 13px;
   }
   .home-content h3:nth-of-type(2){
     margin-bottom: 15px;
@@ -854,18 +855,19 @@
     width: 100%;
     height: 250px;
   }
-  #home{
-    margin-top: 50px;
+  .home-content h1{
+    font-size: 20px;
+  }
+  .home-content h3{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .home-content p{
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width:315px) {
-  .home-content{
-    margin-top: 150px;
-  }
-  .profileImage {
-    margin-top: -150px;
-  }
   .main-text h2{
     font-size: 25px;
   }
@@ -985,10 +987,6 @@ body{
   color: #030934;;
 }
 
-.home{
-  padding: 70px 10% 0;
-}
-
 .home-content h3 span{
   color: #0ef;
 }
@@ -1012,17 +1010,12 @@ body{
 }
 
 .profileImage {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 0px;
   opacity: 0;
   animation: slideLeft .9s ease forwards;
 }
 
 .profileImage img {
-  width: 80%;
+  width: 100%;
   height: 100%;
   object-fit: contain;
 }
@@ -1117,7 +1110,6 @@ body{
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 100%;
   padding: 50px 10% 0;
 }
 
@@ -1259,6 +1251,7 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: stretch;
+  padding: 0px 10%;
 }
 
 .skills-container{
