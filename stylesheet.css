@@ -656,7 +656,7 @@
 
 @media screen and (max-width:426px) {
   .home{
-    height: 90vh;
+    height: 80vh;
   }
   .home-content{
     padding-bottom: 50px;
