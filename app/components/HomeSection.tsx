@@ -42,7 +42,7 @@ export default function HomeSection() {
               { icon: <Github className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Github', link: 'https://github.com/Sivakkanth' },
               { icon: <Mail className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Mail', link: 'mailto:sivakanth2000s@gmail.com' },
               { icon: <Youtube className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Youtube', link: 'https://www.youtube.com/@Sivakkanth' },
-              { icon: <img className="bg-[#0ef] rounded-full" src="..\Image\fiverr.png" alt="fiverrImg"/>, name: 'Fiverr', link: 'https://www.fiverr.com/asivabkanth' },
+              { icon: <img className="bg-[#0ef] rounded-full" src="../Image/fiverr.png" alt="fiverrImg"/>, name: 'Fiverr', link: 'https://www.fiverr.com/asivabkanth' },
               { icon: <Figma className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Figma', link: 'https://www.figma.com/@asivabkanth' },
               { icon: <Facebook className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Facebook', link: 'https://web.facebook.com/siva.kanth.1238' }
             ].map((item, index) => (
@@ -99,7 +99,7 @@ export default function HomeSection() {
         {/* Right Side Profile Image */}
         <div className="absolute z-0 w-full -right-20 sm:-right-40 top-10 sm:top-0 md:-top-10 xl:top-0 flex justify-end items-center animate-slideUp">
           <img
-            src="/image/3.png"
+            src="../Image/3.png"
             alt="Profile"
             className="object-contain w-full max-w-3xl"
           />

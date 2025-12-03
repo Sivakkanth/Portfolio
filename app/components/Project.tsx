@@ -17,7 +17,7 @@ const projects: Project[] = [
   {
     title: 'Crypto Currency Management System',
     videoUrl: 'https://www.youtube.com/embed/XcpPwtxCeTA?autoplay=1&mute=1',
-    imageUrl: '/image/crypto.png',
+    imageUrl: '../Image/crypto.png',
     description:
       'It serves as a centralized platform for users to manage cryptocurrencies and conduct monetary transactions securely and efficiently. I focused a pivotal role in conceptualizing, designing, and implementing this comprehensive solution, ensuring its functionality and usability met the highest standards.',
     projectLink: '/1',
@@ -25,7 +25,7 @@ const projects: Project[] = [
   {
     title: 'Sample DashBoard (dappr)',
     videoUrl: 'https://www.youtube.com/embed/ufGk9rdNpfI?autoplay=1&mute=1',
-    imageUrl: '/image/DashBoard.jpeg',
+    imageUrl: '../Image/DashBoard.jpeg',
     description:
       'The Sample Dashboard is a dynamic and fully responsive web application developed to demonstrate proficiency in front-end development using modern technologies. Created as a project for a Fiverr freelance client, this dashboard highlights the ability to design and implement a professional user interface that adapts seamlessly across various devices.',
     projectLink: '/2',
@@ -33,7 +33,7 @@ const projects: Project[] = [
   {
     title: 'Job Portal Mobile App (JobGods)',
     videoUrl: 'https://www.youtube.com/embed/sZNc7P7yzeo?autoplay=1&mute=1',
-    imageUrl: '/image/JobGods.png',
+    imageUrl: '../Image/JobGods.png',
     description:
       'JobGods is an innovative mobile application designed to bridge the gap between job seekers and potential employers. It simplifies the process of finding employment opportunities and managing job applications.',
     projectLink: '/3',
@@ -41,7 +41,7 @@ const projects: Project[] = [
   {
     title: 'Portfolio (Softpro)',
     videoUrl: 'https://www.youtube.com/embed/69-GnADoAf4?autoplay=1&mute=1',
-    imageUrl: '/image/portfolio.png',
+    imageUrl: '../Image/portfolio.png',
     description:
       'This portfolio website showcases my expertise in web development, design, and user experience. It serves as a comprehensive platform to present my skills, projects, and professional journey.',
     projectLink: '/4',
@@ -49,7 +49,7 @@ const projects: Project[] = [
   {
     title: 'Student Management System',
     videoUrl: 'https://www.youtube.com/embed/aOy34Uft1pY?autoplay=1&mute=1',
-    imageUrl: '/image/Home.png',
+    imageUrl: '../Image/Home.png',
     description:
       'The Student Management System is a desktop application developed to efficiently manage student details. Utilizing the WPF.NET Desktop Application Framework with C#, this project provides a comprehensive and user-friendly interface for handling student information.',
     projectLink: '/5',
