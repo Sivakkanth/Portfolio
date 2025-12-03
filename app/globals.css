@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease forwards;
+}
+
+/* Navbar links animation */
+.navbar .nav-link {
+  @apply text-white font-medium text-lg px-4 py-1 rounded-full opacity-0 transition duration-300;
+  animation: slideTop 0.5s ease forwards;
+}
+
+/* Slide top animation */
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
