@@ -1,7 +1,7 @@
 // app/components/ProjectsSection.tsx
 'use client';
 
-import { View } from 'lucide-react';
+import { ArrowRight, ExternalLink, View } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -86,13 +86,13 @@ export default function Project() {
               height={216}
               className="w-full h-48 md:h-60 object-cover"
             />
-            <div className="p-4 bg-[#060d45]/50 absolute bottom-0 w-full h-full flex flex-col justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer">
+            <div className="p-4 bg-[#060d45]/70 absolute bottom-0 w-full h-full flex flex-col justify-center opacity-0 hover:opacity-100 transition-opacity duration-300 cursor-pointer">
               <p className="text-md font-semibold mb-2 bg-[#0ef] text-[#060d45] p-3 rounded">{project.description}</p>
               <Link
                 href={project.projectLink}
-                className="gap-2 inline-block bg-[#0ef] text-[#060d45] py-2 px-4 rounded flex items-center justify-center mt-2 hover:shadow-[0_0_10px_#0ef] transition-shadow duration-300"
+                className="gap-2 inline-block transition-shadow duration-300 justify-center flex items-center mt-2"
               >
-                <View className="w-6 h-6" /> See more
+                <ExternalLink className="w-12 h-12 bg-[#0ef] text-[#060d45] py-2 px-4 rounded-full shadow-lg hover:shadow-[#0ef]/50 transition-shadow duration-300" />
               </Link>
             </div>
           </div>

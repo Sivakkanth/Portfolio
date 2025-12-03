@@ -12,6 +12,12 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
+    title: "Intern Software Engineer at Effective Solution Pvt Ltd",
+    description: "Worked as an Intern Software Engineer at Effective Solution Pvt Ltd, gaining hands-on experience in software development and collaborating with a dynamic team.",
+    date: "July 2024 - Jan 2025",
+    icon: <Building className="w-12 h-12" />,
+  },
+  {
     title: "Computer Engineering undergraduate Galle, Sri Lanka",
     description: "I am currently a third-year undergraduate student pursuing studies in Computer Engineering.",
     date: "Mar 2021 - Present",
@@ -40,7 +46,7 @@ const experiences: Experience[] = [
 const TimelineItem: FC<{ experience: Experience, position: number }> = ({ experience, position }) => (
   <div className="relative ml-12 md:ml-0`">
     <div className={`grid md:grid-cols-2 items-center`}>
-        <span className={`${position % 2 === 0 ? 'order-2' : 'order-1'} hidden md:block top-1/2 backdrop-blur-sm py-6 rounded-xl border border-blue-400/20 shadow-lg shadow-blue-500/10 text-white text-xl font-semibold text-center`}>
+        <span className={`${position % 2 === 0 ? 'order-2' : 'order-1'} hidden md:block top-1/2 backdrop-blur-sm bg-cyan-300/30 py-6 rounded-xl border border-blue-400/20 shadow-lg shadow-blue-500/10 text-white text-xl font-semibold text-center`}>
           {experience.date}
         </span>
         <div className="flex justify-center md:justify-center items-center w-20 h-20 absolute top-1/2 left-0 md:left-1/2 transform -translate-x-1/2 -translate-y-1/2
@@ -50,7 +56,7 @@ const TimelineItem: FC<{ experience: Experience, position: number }> = ({ experi
           </div>
         </div>
         <div className={`${position % 2 === 0 ? 'order-1 md:text-right border-l-4 border-r-0 md:border-r-4 md:border-l-0' : 'order-2 md:text-left border-l-4 ml-0 md:-ml-[3px]'} border-yellow-300 py-12`}>
-          <div className={`${position % 2 === 0 ? "pr-12 pl-12 md:pl-6" : "pl-12 pr-6"} bg-white/5 backdrop-blur-sm py-6 rounded-xl border border-blue-400/20 shadow-lg shadow-blue-500/10 text-white`}>
+          <div className={`${position % 2 === 0 ? "pr-12 pl-12 md:pl-6" : "pl-12 pr-6"} bg-cyan-900/70 backdrop-blur-sm py-6 rounded-xl border border-cyan-400/20 shadow-lg shadow-blue-500/10 text-white`}>
             <h5 className="text-xl font-semibold mb-2">{experience.title}</h5>
             <p className="text-gray-300 mb-4">{experience.description}</p>
             <span className="text-yellow-300 text-sm">{experience.date}</span>
@@ -63,8 +69,6 @@ const TimelineItem: FC<{ experience: Experience, position: number }> = ({ experi
 
 const ExperienceSection: FC = () => {
   return (
-    // Assuming the dark starry background is applied to a parent component or the entire app. 
-    // We ensure the text is white/light.
     <section id="experience" className="py-16 text-white z-10">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">

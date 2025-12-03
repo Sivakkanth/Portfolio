@@ -4,7 +4,7 @@ import TypedText from './TypedText';
 
 export default function HomeSection() {
   return (
-    <section id="home" className="w-full max-w-7xl mx-auto flex justify-between items-center px-6 xl:px-0">
+    <section id="home" className="w-full max-w-7xl mx-auto flex justify-between items-center px-2 sm:px-6 xl:px-0">
       <div className="grid grid-cols-1 xl:grid-cols-3 items-center w-full
         relative overflow-hidden
         min-h-screen
@@ -38,22 +38,22 @@ export default function HomeSection() {
           {/* Social Icons */}
           <div className="flex items-center gap-4 mt-8">
             {[
-              { icon: <Linkedin className="w-5 h-5 md:w-10 md:h-10"/>, link: 'https://www.linkedin.com/in/sivakkanth/' },
-              { icon: <Github className="w-5 h-5 md:w-10 md:h-10"/>, link: 'https://github.com/Sivakkanth' },
-              { icon: <Mail className="w-5 h-5 md:w-10 md:h-10"/>, link: 'mailto:sivakanth2000s@gmail.com' },
-              { icon: <Youtube className="w-5 h-5 md:w-10 md:h-10"/>, link: 'https://www.youtube.com/@Sivakkanth' },
-              { icon: <img className="bg-cyan-400 rounded-full" src="..\Image\fiverr.png" alt="fiverrImg"/>, link: 'https://www.fiverr.com/asivabkanth' },
-              { icon: <Figma className="w-5 h-5 md:w-10 md:h-10"/>, link: 'https://www.figma.com/@asivabkanth' },
-              { icon: <Facebook className="w-5 h-5 md:w-10 md:h-10"/>, link: 'https://web.facebook.com/siva.kanth.1238' }
+              { icon: <Linkedin className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Linkedin', link: 'https://www.linkedin.com/in/sivakkanth/' },
+              { icon: <Github className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Github', link: 'https://github.com/Sivakkanth' },
+              { icon: <Mail className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Mail', link: 'mailto:sivakanth2000s@gmail.com' },
+              { icon: <Youtube className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Youtube', link: 'https://www.youtube.com/@Sivakkanth' },
+              { icon: <img className="bg-[#0ef] rounded-full" src="..\Image\fiverr.png" alt="fiverrImg"/>, name: 'Fiverr', link: 'https://www.fiverr.com/asivabkanth' },
+              { icon: <Figma className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Figma', link: 'https://www.figma.com/@asivabkanth' },
+              { icon: <Facebook className="w-5 h-5 md:w-7 md:h-7"/>, name: 'Facebook', link: 'https://web.facebook.com/siva.kanth.1238' }
             ].map((item, index) => (
               <a
                 key={index}
                 href={item.link}
                 target="_blank"
-                className="
+                className="relative group
                   border-2
-                  border-cyan-400 
-                  text-cyan-400 
+                  border-[#0ef]
+                  text-[#0ef]
                   w-8 md:w-12 
                   h-8 md:h-12 
                   rounded-full 
@@ -62,12 +62,15 @@ export default function HomeSection() {
                   items-center 
                   text-xl
                   hover:shadow-md
-                  hover:shadow-cyan-400 
+                  hover:shadow-[#0ef]
                   hover:scale-110
                   transition
                 "
               >
                 {item.icon}
+                <span className="absolute -top-6 md:-top-8 text-sm md:text-md bg-black/70 text-white px-2 py-1 rounded-md opacity-0 group-hover:opacity-100 transition">
+                  {item.name}
+                </span>
               </a>
             ))}
           </div>
@@ -75,10 +78,10 @@ export default function HomeSection() {
           {/* CTA Button */}
           <a
             href="#about"
-            className="
-              mt-10 
+            className="hover:shadow-[#0ef]/50
+              mt-10 shadow-lg
               inline-block 
-              bg-cyan-500 
+              bg-[#0ef] 
               text-[#030c29]
               font-semibold 
               px-10 

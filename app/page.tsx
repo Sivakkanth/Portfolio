@@ -1,5 +1,5 @@
 import About from "./components/About";
-import ContactSection from "./components/Contact";
+import ContactSection from "./components/ContactSection";
 import ExperienceSection from "./components/Experience";
 import Header from "./components/Header";
 import Hire from "./components/Hire";

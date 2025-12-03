@@ -9,13 +9,6 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <head>
-        <script
-          src="https://web3forms.com/client/script.js"
-          async
-          defer
-        ></script>
-      </head>
       <body>{children}</body>
     </html>
   );

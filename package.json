@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hcaptcha/react-hcaptcha": "^1.16.0",
+    "@web3forms/react": "^1.1.3",
     "lucide-react": "^0.555.0",
     "next": "16.0.6",
     "react": "19.2.0",
