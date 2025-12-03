@@ -8,7 +8,7 @@ export default function Header() {
   const navLinks = ['home', 'about', 'service', 'skill', 'project', 'experience', 'hire', 'contact'];
 
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#060d45] z-50 p-5 md:px-20 text-white">
+    <header className="fixed top-0 left-0 w-full bg-[#030934] z-50 p-5 md:px-20 text-white">
       <div className="max-w-7xl mx-auto flex justify-between items-center relative">
         <Link href="/" className="text-2xl font-extrabold font-sans tracking-wide hover:text-cyan-300 transition duration-300 overline text-cyan-100">
             Softpro
