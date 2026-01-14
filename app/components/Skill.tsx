@@ -3,13 +3,28 @@
 import React from 'react';
 
 const technicalSkills = [
-  { name: 'Web Development Technologies', tools: 'HTML, CSS, JavaScript', percentage: 90 },
-  { name: 'Frameworks and Libraries', tools: 'React JS, React Native, Flutter, Tailwind CSS, Bootstrap', percentage: 85 },
-  { name: 'Backend Technologies and Databases', tools: 'Node JS, Next JS, MySQL, Firebase, MongoDB', percentage: 80 },
+  {
+    name: 'Frontend Development',
+    tools: 'Next.js, React.js, Redux, Tailwind CSS, TypeScript, JavaScript',
+    percentage: 95,
+  },
+  {
+    name: 'Backend & API Development',
+    tools: 'Spring Boot, Node.js, ASP.NET Core, RESTful APIs, JWT, Microservices',
+    percentage: 90,
+  },
+  {
+    name: 'Mobile App Development',
+    tools: 'React Native, Flutter',
+    percentage: 80,
+  },
+  {
+    name: 'DevOps & Tools',
+    tools: 'Docker, Docker Compose, AWS, Git/GitHub, Vercel, Google Colab, Postman',
+    percentage: 85,
+  },
   { name: 'UI/UX Design', tools: 'Figma', percentage: 75 },
-  { name: 'Version Control', tools: 'GitHub', percentage: 70 },
-  { name: 'Web Application Framework', tools: 'ASP.net', percentage: 65 },
-  { name: 'Programming Languages', tools: 'Java, C#, C, C++, Python', percentage: 85 },
+  { name: 'Programming Languages', tools: 'Java, JavaScript, TypeScript, Python, C, C++, SQL', percentage: 85 },
 ];
 
 const professionalSkills = [
